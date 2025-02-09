@@ -1,0 +1,14 @@
+
+<odoo>
+    <record id="view_product_product_tree_inherit" model="ir.ui.view">
+        <field name="name">product.product.tree.inherit</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_product_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="inside">
+                <!-- عرض السعر الثابت -->
+                <field name="fixed_price" string="Fixed Price"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
